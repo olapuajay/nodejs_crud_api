@@ -1,0 +1,23 @@
+[
+  {
+    "id": "c8b5e3e3-4b0f-4b5d-8b6e-0f5f7d3e0f5b",
+    "title": "The Avengers",
+    "year": "2012",
+    "genre": "Action, Adventure, Sci-Fi",
+    "rating": "8.1"
+  },
+  {
+    "id": "c8b5e3e3-4b0f-4b5d-8b6e-0f5f7d3e0f5c",
+    "title": "pirates of the caribbean: at world's end",
+    "year": "2007",
+    "genre": "Action, Adventure, Fantasy",
+    "rating": "7.1"
+  },
+  {
+    "id": "c8b5e3e3-4b0f-4b5d-8b6e-0f5f7d3e0f5d",
+    "title": "Avatar",
+    "year": "2009",
+    "genre": "Action, Adventure, Fantasy",
+    "rating": "7.8"
+  }
+]

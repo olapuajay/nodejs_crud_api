@@ -7,10 +7,10 @@ module.exports = async (request) => {
       });
       request.on("end", () => {
         resolve(JSON.parse(body));
-      })
+      });
     } catch (error) {
       console.log(error);
       reject(error);
     }
-  })
-}
+  });
+};

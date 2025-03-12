@@ -1,9 +1,9 @@
-const crypto = require('crypto');
-const reqBodyParser = require('../util/body-parser');
-const writeToFile = require('../util/write-to-file');
+const crypto = require("crypto");
+const reqBodyParser = require("../util/body-parser");
+const writeToFile = require("../util/write-to-file");
 
 module.exports = async (req, res) => {
-  if(req.url === "/api/movies") {
+  if (req.url === "/api/movies") {
     try {
       let body = await reqBodyParser(req);
       body.id = crypto.randomUUID();
@@ -17,15 +17,17 @@ module.exports = async (req, res) => {
       res.end(
         JSON.stringify({
           title: "Validation Failed",
-          message: "Request body is not valid"
+          message: "Request body is not valid",
         })
       );
     }
   } else {
     res.writeHead(404, { "Content-Type": "application/json" });
-    res.end(JSON.stringify({
-      title: "Not Found",
-      message: "Route not found"
-    }))
+    res.end(
+      JSON.stringify({
+        title: "Not Found",
+        message: "Route not found",
+      })
+    );
   }
 };
